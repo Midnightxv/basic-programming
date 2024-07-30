@@ -1,5 +1,5 @@
 function bmi(height: number , weight: number) {
-    let bmi = weight /  height * height ;
+    let bmi = weight /  (height * height) ;
 
     if (bmi < 18.5) {
         return 'Underweight' ;
