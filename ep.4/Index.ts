@@ -65,13 +65,13 @@ function shirt(size: string) {
 }
 shirt('2xl')
 
-function fixedDecimal(n: number , digit: number){
+function fixedDecimal(n: number, digit: number) {
     const x = n.toFixed(digit)
     return x
 }
-console.log(fixedDecimal(40.67676,10))
+console.log(fixedDecimal(40.67676, 10))
 
-function num(a:number){
+function num(a: number) {
     return a.toLocaleString()
 }
 console.log(num(100000))
@@ -96,7 +96,12 @@ const str: string = "Natchaporn"
 
 console.log(str.toUpperCase())
 
-function checkStringLength(x:string){
+function checkStringLength(x: string) {
     console.log(x.length)
 }
 checkStringLength('Natchaporn')
+
+function ByIndex(ms: string, index: number) {
+    return ms.charAt(index)
+}
+console.log(ByIndex('อยากกลับบ้าน', 5))
