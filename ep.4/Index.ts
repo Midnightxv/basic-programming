@@ -113,3 +113,12 @@ console.log(str.indexOf('ล'))
 const str:string ='อยากกลับบ้าน'
 
 console.log(str.includes('บ้าน'))
+
+function sentence(agm:string , ag:string){
+    if (agm.includes(ag)) {
+        console.log(agm.indexOf(ag))
+    } else{
+        console.log('ไม่พบคำที่ค้นหา')
+    }
+}   
+sentence('อยากกลับบ้าน','h')
