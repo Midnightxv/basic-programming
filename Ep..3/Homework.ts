@@ -15,4 +15,4 @@ function bmi(height: number , weight: number) {
         return 'Error'
     }
 }
-console.log(bmi(1.55,55)
+console.log(bmi(1.55,55))
