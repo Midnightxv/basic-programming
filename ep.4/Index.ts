@@ -105,3 +105,11 @@ function ByIndex(ms: string, index: number) {
     return ms.charAt(index)
 }
 console.log(ByIndex('อยากกลับบ้าน', 5))
+
+const str:string ='อยากกลับบ้าน'
+
+console.log(str.indexOf('ล'))
+
+const str:string ='อยากกลับบ้าน'
+
+console.log(str.includes('บ้าน'))
