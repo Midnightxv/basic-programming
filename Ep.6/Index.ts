@@ -59,3 +59,24 @@ for (let i = 1; i <= 18; i++){
     console.log('ฉันอายุ'+ i + "ปี")
 }
 //เเบบง่ายสั้นๆ
+
+let car1: string = 'Toyota'
+let car2: string = 'honda'
+let car3: string = 'Suzuki'
+let car4: string = 'Yamaha'
+let car5; string = 'Mazda'
+
+//const cars: string[] = ['Toyota','Honda','Suzuki','Yamaha','Mazda']
+
+const cars: string[] = ['Toyota','Honda','Suzuki','Yamaha','Mazda']
+
+for(let i = 0; i< 5; i++){
+    console.log(cars[i])
+}
+//วนลูปเรียกค่าทั้ง5
+const cars: string[] = ['Toyota','Honda','Suzuki','Yamaha','Mazda','Byd']
+
+for(let i = 0;i< cars.length; i++){
+    console.log(cars[i])
+}
+//วนลูปตามค่า arrayเริ่มจาก0 วนรอบไม่เกินความยาวของค่าที่กำหนดไว้
