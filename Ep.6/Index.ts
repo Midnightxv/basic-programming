@@ -80,3 +80,9 @@ for(let i = 0;i< cars.length; i++){
     console.log(cars[i])
 }
 //วนลูปตามค่า arrayเริ่มจาก0 วนรอบไม่เกินความยาวของค่าที่กำหนดไว้
+for(let i = 0;i<cars.length; i++){
+    if (cars[i]=== 'Yamaha'){
+        console.log('รถซื้อเเกง จะเเรงได้ไง')
+    }
+} 
+//เเบบเจอค่าyamahaให้เปลี่ยนเป็นรถซื้อเเกง จะเเรงได้ไง
