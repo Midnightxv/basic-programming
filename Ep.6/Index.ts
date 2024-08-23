@@ -86,3 +86,12 @@ for(let i = 0;i<cars.length; i++){
     }
 } 
 //เเบบเจอค่าyamahaให้เปลี่ยนเป็นรถซื้อเเกง จะเเรงได้ไง
+const F: string[] = ['pim','L','ink','first','V']
+
+for (let i = 0;i<5; i++){
+    if (F[i] === 'L'){
+        console.log('ไปกินหมูกะทะกัน')
+    }else{
+        console.log('ไม่เจอชื่อที่จะชวนไป')
+    }
+}
