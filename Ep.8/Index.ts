@@ -1023,10 +1023,11 @@ const myFriendMoreThan = myFriend.filter(function(element,index){
   let covidProvince = []
 
 for (let i=0;i<database.length; i++){
-    if(database.[i].total_death>5){
+    if(database[i].total_death>5){
         covidProvince.push(database[i])
     }
 
 }
 
-console.log('filter wiht forloop:',database[i])
+console.log('filter wiht forloop:',covidProvince)
+
