@@ -22,6 +22,8 @@ const aboutMe = {
 }
 console.log(aboutMe.myBro.AKA)
 
+/////////////////////////////////////////
+
 const myFriend = [{
     firstName: 'Lisa',
     lastName:'Mamamoosub',
@@ -44,3 +46,10 @@ const myFriend = [{
     age: 17
 }]
 console.log(myFriend[0].firstName)
+
+const myFriendAKA = myFriend.map(function(element,index){
+    return ({
+        firstName:element.firstName,
+        AKA:element.AKA
+    })
+})
