@@ -3928,10 +3928,5 @@ const Doreamon = {
 }
 
 console.log(Doreamon.airing())
+////////////////////////////////////////////////////
 
-const person = {
-    firstName: 'Tony',
-    lastName: 'Jaa',
-    age : 40,
-    
-}
