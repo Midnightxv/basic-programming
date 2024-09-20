@@ -31,5 +31,23 @@ const database = [
         password: 'loveYou3000'
     }
 ]
-/////////////////functionอีเมล กำหนดรหัสเเละตรวจสอบเมลเเละเก็บไว้ในdatabase////////////////////////////////
-//////////วิธีเรียก functionคือ register('eamil','password')//////////////////////////////////////
+/////เขียนฟังชั่นสมัครเข้าใช้ด้วยจีเมลเเละพาสเวิด///////
+////validationข้อมูล(emailถูกต้องเเละรหัสผ่านมากกว่า8ตัวเเละไม่เกิน16ตัว)/////////////////
+////////เมื่อผ่านเซพข้อมูลเป็นobjectเข้าarray(สมมติว่าเป็นdatabase)/////////////////////
+////เรียกใช้ฟังชั่น /// register('email','password')///////////////////////
+
+function login(email: string,password: string){
+    const user = database.filter(function(element,index){
+        return element.email === email
+    })
+    if (user.length > 0){
+        if (user[0].password === password){
+            alert('เข้าสู่ระบบสำเร็จ ยินดีต้อนรับ')
+        }else{
+            alert('รหัสผ่านไม่ถูกต้อง  โปรดตรวจสอบ')
+        }
+    }else{
+        alert('ไม่พบผู้ใช้งานในระบบ')
+    }
+}
+/////////เข้าใช้เว็บไซด์โดยตรวจสอบจีเมลเเละพาสเวิดที่มีในdatabaseอยู่เเล้ว////////////
