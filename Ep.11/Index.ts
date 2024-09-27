@@ -42,3 +42,31 @@ function login(email:string,password: string){
     }
 }
 //////////////อีกเเบบ//////////////////////////
+
+function login(email:string,passwoed:string){
+    const user = database.filter(function(element,index){
+        return element.email === email
+    })
+if (!(email.includes("@") && email.lastIndexOf('@') !== email.length - 1)) {
+    alert('Mail ไมม่ถูกต้อง')
+    return
+}
+if (user.length === 0){
+    alert('ไม่มีผู้ใช้งานในระบบ')
+    return
+}
+if(!(atob(user[0].password) === passwoed)){
+    alert('รหัสผ่านไม่ถูกต้อง')
+    return
+}
+
+alert('เข้าสู่ระบบเเล้ว')
+
+}
+login('max@utk.ac.th','maxi@utk1234')
+
+//////////////เข้าสู่ระบบเเบบไม่มีelse////////////////////////
+////////ตรวจสอบหลายขั้น////////////////////////////////
+
+///atob=การเเปลงรหัส //////////////////////////////////
+////encode=เข้ารหัส//// decode=ถอดรหัส////////////////////
